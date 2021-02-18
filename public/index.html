@@ -34,7 +34,7 @@
           </ul>
         </nav>
       </div>
-      <main class="px-16 py-6">
+      <main class="px-16 py-6 bg-gray-100">
         <div class="flex md:justify-end justify-center">
           <a href="#" class="text-primary">Log in</a>
           <a href="#" class="text-primary ml-2">Sign up</a>
@@ -48,11 +48,20 @@
             Latest Recipes
           </h4>
           <div class="mt-8">
-            <div>
-              <img src="./images/curry.jpg" alt="curry-recipe" />
-              <div>
-                <span>5 Bean Chilli Stew</span>
-                <span>Recipe by Mario</span>
+            <div class="card">
+              <img
+                src="./images/curry.jpg"
+                alt="curry-recipe"
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold">5 Bean Chilli Stew</span>
+                <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+              </div>
+              <div
+                class="bg-secondary-100 text-secondary-200 text-xs rounded-full p-2 absolute top-0"
+              >
+                <span>25 mins</span>
               </div>
             </div>
           </div>
