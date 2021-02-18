@@ -31714,10 +31714,23 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
   border-radius: 0.25rem;
+  cursor: pointer;
   overflow: hidden;
   position: relative;
   --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.card:hover{
+  --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.card{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 200ms;
 }
 
 .badge {
@@ -31746,6 +31759,47 @@ video {
   padding-right: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+}
+
+.account__link:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 99, 99, var(--tw-bg-opacity));
+}
+
+.account__link{
+  --tw-border-opacity: 1;
+  border-color: rgba(255, 99, 99, var(--tw-border-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(255, 99, 99, var(--tw-text-opacity));
+}
+
+.account__link:hover{
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.account__link{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 300ms;
+  border-radius: 9999px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+@media (min-width: 768px){
+  .account__link{
+    border-width: 2px;
+  }
 }
 
 @media (min-width: 640px){
